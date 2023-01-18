@@ -1,0 +1,14 @@
+{
+  "extends": "@deopea/tsconfig/browser",
+  "compilerOptions": {
+    "outDir": "tmp",
+
+    "incremental": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    "types": ["vite/client"]
+  },
+  "files": ["./vite.config.ts"],
+  "include": ["src"]
+}

@@ -1,0 +1,8 @@
+{
+  "extends": "@deopea/tsconfig/js.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "files": [".eslintrc.cjs", ".prettierrc.cjs", "commitlint.config.cjs"],
+  "include": ["**/*.cjs", "packages/eslint-config/**/*"]
+}

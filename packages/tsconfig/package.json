@@ -1,0 +1,28 @@
+{
+  "name": "@deopea/tsconfig",
+  "version": "1.0.0",
+  "description": "tsconfigs used by residents of deopea",
+  "main": "base.json",
+  "types": "index.d.ts",
+  "files": [
+    "*.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deopea-os/earth.git",
+    "directory": "packages/tsconfig"
+  },
+  "keywords": [
+    "tsconfig"
+  ],
+  "author": {
+    "name": "David",
+    "url": "https://github.com/deopea-david"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/deopea-os/earth/tree/main/packages/tsconfig"
+}

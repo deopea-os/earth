@@ -1,0 +1,45 @@
+{
+  "name": "@deopea/root",
+  "version": "0.0.0-development",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "fmt": "turbo run fmt",
+    "prepare": "node scripts/prepare",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@deopea/commitlint-config": "latest",
+    "@deopea/eslint-config": "latest",
+    "@deopea/prettier-config": "latest",
+    "@deopea/tsconfig": "latest",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "latest",
+    "semantic-release": "^20.0.2",
+    "turbo": "latest",
+    "typescript": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deopea-os/earth.git"
+  },
+  "homepage": "https://github.com/deopea-os/earth",
+  "author": {
+    "name": "David",
+    "url": "https://github.com/deopea-david"
+  }
+}

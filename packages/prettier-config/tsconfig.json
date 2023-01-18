@@ -1,0 +1,3 @@
+{
+  "extends": "@deopea/tsconfig/js.json"
+}

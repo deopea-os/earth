@@ -1,0 +1,7 @@
+{
+  "extends": "@deopea/tsconfig/js.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["./index.ts"]
+}

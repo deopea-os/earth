@@ -1,0 +1,39 @@
+{
+  "name": "@deopea/eslint-config",
+  "version": "1.0.0",
+  "description": "eslint configs used by residents of deopea",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" .",
+    "lint": "TIMING=1 eslint --cache --cache-location \".turbo/.eslintcache\""
+  },
+  "devDependencies": {
+    "@deopea/tsconfig": "^1.0.0",
+    "@typescript-eslint/parser": "^5.48.1",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-qwik": "^0.16.2",
+    "typescript": "^4.9.4"
+  },
+  "homepage": "https://github.com/deopea-os/earth/tree/main/packages/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deopea-os/earth.git",
+    "directory": "packages/eslint-config"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": {
+    "name": "David",
+    "url": "https://github.com/deopea-david"
+  },
+  "license": "MIT"
+}

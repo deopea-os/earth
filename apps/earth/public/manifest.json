@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Deopea Earth",
+  "short_name": "Welcome to Deopea",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Home of Deopea."
+}

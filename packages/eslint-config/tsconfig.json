@@ -1,0 +1,4 @@
+{
+  "extends": "@deopea/tsconfig/js.json",
+  "include": ["*.js"]
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "@deopea/tsconfig/node.json",
+  "compilerOptions": {
+    "noEmit": true
+  }
+}
