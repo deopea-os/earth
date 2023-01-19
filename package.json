@@ -17,7 +17,7 @@
     "lint": "turbo run lint",
     "fmt": "turbo run fmt",
     "prepare": "node scripts/prepare",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
@@ -26,10 +26,13 @@
     "@deopea/eslint-config": "latest",
     "@deopea/prettier-config": "latest",
     "@deopea/tsconfig": "latest",
+    "@semantic-release/changelog": "^6.0.2",
+    "@types/semantic-release": "^20.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "latest",
     "semantic-release": "^20.0.2",
+    "ts-node": "^10.9.1",
     "turbo": "latest",
     "typescript": "latest"
   },
