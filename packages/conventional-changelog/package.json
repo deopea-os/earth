@@ -7,7 +7,8 @@
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
-    "test": "node -r ts-node/register --test index.test.ts"
+    "test": "node -r ts-node/register --test index.test.ts",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@deopea/eslint-config": "^1.0.0",
