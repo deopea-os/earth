@@ -1,4 +1,4 @@
-import tsconfig from "@deopea/tsconfig";
+import tsconfig from "@deopea.os/tsconfig";
 import type { TSESLint } from "@typescript-eslint/utils";
 
 const config: TSESLint.Linter.Config = {

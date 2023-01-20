@@ -1,5 +1,5 @@
 {
-  "name": "@deopea/tsconfig",
+  "name": "@deopea.os/tsconfig",
   "version": "1.0.0",
   "description": "tsconfigs used by residents of deopea",
   "main": "base.json",

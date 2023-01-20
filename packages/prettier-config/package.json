@@ -1,5 +1,5 @@
 {
-  "name": "@deopea/prettier-config",
+  "name": "@deopea.os/prettier-config",
   "version": "1.0.0",
   "description": "prettier config used by the residents of deopea",
   "type": "commonjs",
@@ -12,8 +12,8 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@deopea/eslint-config": "^1.0.0",
-    "@deopea/tsconfig": "^1.0.0",
+    "@deopea.os/eslint-config": "^1.0.0",
+    "@deopea.os/tsconfig": "^1.0.0",
     "@types/prettier": "^2.7.2",
     "typescript": "*"
   },

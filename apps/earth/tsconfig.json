@@ -1,5 +1,5 @@
 {
-  "extends": "@deopea/tsconfig/browser",
+  "extends": "@deopea.os/tsconfig/browser",
   "compilerOptions": {
     "outDir": "tmp",
 

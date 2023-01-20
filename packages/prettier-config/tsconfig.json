@@ -1,5 +1,5 @@
 {
-  "extends": "@deopea/tsconfig/cjs.json",
+  "extends": "@deopea.os/tsconfig/cjs.json",
   "compilerOptions": {
     "outDir": "./"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "@deopea/semantic-release-config",
+  "name": "@deopea.os/semantic-release-config",
   "version": "1.0.0",
   "description": "semantic-release config used by residents of deopea",
   "type": "commonjs",
@@ -9,9 +9,9 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@deopea/conventional-changelog": "^1.0.0",
-    "@deopea/eslint-config": "^1.0.0",
-    "@deopea/tsconfig": "^1.0.0",
+    "@deopea.os/conventional-changelog": "^1.0.0",
+    "@deopea.os/eslint-config": "^1.0.0",
+    "@deopea.os/tsconfig": "^1.0.0",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "semantic-release-monorepo": "^7.0.5",

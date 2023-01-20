@@ -1,4 +1,4 @@
-const config = require("@deopea/prettier-config");
+const config = require("@deopea.os/prettier-config");
 
 /**
  * @type {import('prettier').Options}
