@@ -48,5 +48,8 @@
     "url": "https://github.com/deopea-os/earth.git",
     "directory": "apps/earth"
   },
-  "homepage": "https://github.com/deopea-os/earth/tree/main/apps/earth"
+  "homepage": "https://github.com/deopea-os/earth/tree/main/apps/earth",
+  "bugs": {
+    "url": "https://github.com/deopea-os/earth/issues"
+  }
 }

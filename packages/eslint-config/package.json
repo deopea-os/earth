@@ -42,5 +42,8 @@
     "name": "David",
     "url": "https://github.com/deopea-david"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deopea-os/earth/issues"
+  }
 }

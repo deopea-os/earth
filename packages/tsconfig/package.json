@@ -26,5 +26,8 @@
     "url": "https://github.com/deopea-david"
   },
   "license": "MIT",
-  "homepage": "https://github.com/deopea-os/earth/tree/main/packages/tsconfig"
+  "homepage": "https://github.com/deopea-os/earth/tree/main/packages/tsconfig",
+  "bugs": {
+    "url": "https://github.com/deopea-os/earth/issues"
+  }
 }
