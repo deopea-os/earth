@@ -15,6 +15,9 @@
     "lint": {
       "outputs": [".turbo/.eslintcache"]
     },
+    "release": {
+      "cache": false
+    },
     "test": {},
     "test:watch": {
       "cache": false
