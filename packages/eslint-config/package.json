@@ -16,7 +16,6 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@deopea/semantic-release-config": "^1.0.0",
     "@deopea/tsconfig": "^1.0.0",
     "@typescript-eslint/parser": "^5.48.1",
     "typescript": "*"
