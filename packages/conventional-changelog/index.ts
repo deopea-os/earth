@@ -9,6 +9,7 @@ const config: Config = {
     { type: "chore", section: "Miscellaneous Chores", hidden: true },
     { type: "ci", section: "Continuous Integration", hidden: true },
     { type: "config", section: "Configurations", hidden: true },
+    { type: "deps", section: "Dependencies", hidden: true },
     { type: "docs", section: "Documentation", hidden: true },
     { type: "feat", section: "Features" },
     { type: "fix", section: "Bug Fixes" },

@@ -11,6 +11,7 @@ const config: UserConfig = {
         "chore",
         "ci",
         "config",
+        "deps",
         "docs",
         "feat",
         "fix",
