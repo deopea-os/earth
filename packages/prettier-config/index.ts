@@ -1,7 +1,6 @@
-/**
- * @type {import("prettier").Options}
- */
-module.exports = {
+import type { Options } from "prettier";
+
+const config: Options = {
   endOfLine: "lf",
   quoteProps: "consistent",
   semi: true,
@@ -10,3 +9,5 @@ module.exports = {
   trailingComma: "all",
   useTabs: false,
 };
+
+export = config;

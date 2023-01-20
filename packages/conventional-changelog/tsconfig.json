@@ -3,5 +3,9 @@
   "compilerOptions": {
     "outDir": "./"
   },
-  "include": ["./index.ts"]
+  "include": ["*.ts", "typings"],
+
+  "ts-node": {
+    "transpileOnly": true
+  }
 }

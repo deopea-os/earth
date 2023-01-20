@@ -14,7 +14,7 @@ declare module "@deopea/tsconfig/node.json" {
   const config: typeof import("./node.json");
   export default config;
 }
-declare module "@deopea/tsconfig/js.json" {
-  const config: typeof import("./js.json");
+declare module "@deopea/tsconfig/cjs.json" {
+  const config: typeof import("./cjs.json");
   export default config;
 }

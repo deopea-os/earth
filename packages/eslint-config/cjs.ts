@@ -1,7 +1,6 @@
-/**
- * @type {import("@typescript-eslint/utils").TSESLint.Linter.Config}
- */
-module.exports = {
+import type { TSESLint } from "@typescript-eslint/utils";
+
+const config: TSESLint.Linter.Config = {
   extends: ["./index.js"],
   overrides: [
     {
@@ -16,3 +15,5 @@ module.exports = {
     },
   ],
 };
+
+export = config;

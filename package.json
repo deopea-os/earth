@@ -16,7 +16,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "fmt": "turbo run fmt",
-    "prepare": "node scripts/prepare",
+    "preinstall": "node scripts/prepare",
     "release": "semantic-release"
   },
   "devDependencies": {

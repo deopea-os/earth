@@ -1,3 +1,7 @@
 {
-  "extends": "./js.json"
+  "extends": "./cjs.json",
+  "compilerOptions": {
+    "resolveJsonModule": true
+  },
+  "files": ["index.d.ts"]
 }

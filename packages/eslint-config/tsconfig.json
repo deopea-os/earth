@@ -1,4 +1,7 @@
 {
-  "extends": "@deopea/tsconfig/js.json",
-  "include": ["*.js"]
+  "extends": "@deopea/tsconfig/cjs.json",
+  "compilerOptions": {
+    "outDir": "./"
+  },
+  "include": ["*.ts"]
 }

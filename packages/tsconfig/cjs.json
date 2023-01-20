@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/jsconfig",
-  "display": "JS",
+  "display": "CommonJS",
   "extends": "./base.json",
   "compilerOptions": {
     "module": "CommonJS",

@@ -6,6 +6,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" .",
     "lint": "TIMING=1 eslint --cache --cache-location \".turbo/.eslintcache\""

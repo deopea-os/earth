@@ -1,34 +1,35 @@
 {
-  "name": "@deopea/commitlint-config",
+  "name": "@deopea/conventional-changelog",
   "version": "1.0.0",
-  "description": "commitlint config used by the residents of deopea",
+  "description": "conventional-changelog preset used by residents of deopea",
   "type": "commonjs",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" .",
-    "lint": "TIMING=1 eslint --cache --cache-location \".turbo/.eslintcache\""
+    "build": "tsc --project tsconfig.build.json",
+    "test": "node -r ts-node/register --test index.test.ts"
   },
   "devDependencies": {
     "@deopea/eslint-config": "^1.0.0",
     "@deopea/tsconfig": "^1.0.0",
+    "@types/conventional-changelog": "^3.1.1",
+    "@types/conventional-changelog-config-spec": "^2.1.2",
+    "@types/node": "^18.11.18",
     "typescript": "*"
   },
   "peerDependencies": {
-    "@commitlint/config-conventional": "^17.4.2",
+    "conventional-changelog": "^3.1.25",
     "typescript": "^4.9.4"
   },
+  "keywords": [
+    "conventional-changelog",
+    "conventional-changelog-preset"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/deopea-os/earth.git",
-    "directory": "packages/commitlint-config"
+    "directory": "packages/conventional-changelog"
   },
-  "keywords": [
-    "commitlint",
-    "commitlintconfig"
-  ],
   "author": {
     "name": "David",
     "url": "https://github.com/deopea-david"

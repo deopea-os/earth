@@ -1,9 +1,7 @@
-const tsconfig = require("@deopea/tsconfig");
+import tsconfig from "@deopea/tsconfig";
+import type { TSESLint } from "@typescript-eslint/utils";
 
-/**
- * @type {import('@typescript-eslint/utils').TSESLint.Linter.Config}
- */
-module.exports = {
+const config: TSESLint.Linter.Config = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -32,3 +30,5 @@ module.exports = {
     },
   ],
 };
+
+export = config;
