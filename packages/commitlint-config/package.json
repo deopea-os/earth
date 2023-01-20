@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@deopea/eslint-config": "^1.0.0",
+    "@deopea/semantic-release-config": "^1.0.0",
     "@deopea/tsconfig": "^1.0.0",
     "typescript": "*"
   },

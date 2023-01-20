@@ -28,5 +28,8 @@
   "homepage": "https://github.com/deopea-os/earth/tree/main/packages/tsconfig",
   "bugs": {
     "url": "https://github.com/deopea-os/earth/issues"
+  },
+  "devDependencies": {
+    "@deopea/semantic-release-config": "^1.0.0"
   }
 }

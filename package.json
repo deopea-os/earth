@@ -16,7 +16,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "fmt": "turbo run fmt",
-    "preinstall": "node scripts/prepare",
+    "prepare": "node scripts/prepare",
     "release": "semantic-release",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch"
@@ -28,6 +28,7 @@
     "@deopea/conventional-changelog": "^1.0.0",
     "@deopea/eslint-config": "latest",
     "@deopea/prettier-config": "latest",
+    "@deopea/semantic-release-config": "^1.0.0",
     "@deopea/tsconfig": "latest",
     "@semantic-release/changelog": "^6.0.2",
     "@types/semantic-release": "^20.0.0",
