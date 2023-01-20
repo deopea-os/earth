@@ -3,11 +3,6 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "files": [
-    ".eslintrc.cjs",
-    ".prettierrc.cjs",
-    "commitlint.config.cjs",
-    "release.config.cjs"
-  ],
+  "files": [".eslintrc.cjs", ".prettierrc.cjs", "commitlint.config.cjs"],
   "include": ["**/*.cjs"]
 }
