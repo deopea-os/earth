@@ -2,7 +2,19 @@
  * @type {import("semantic-release").Options}
  */
 module.exports = {
-  plugins: ["@semantic-release/changelog"],
+  extends: "semantic-release-monorepo",
+  plugins: [
+    [
+      "@semantic-release/commit-analyzer",
+      { config: "@deopea/conventional-changelog" },
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      { config: "@deopea/conventional-changelog" },
+    ],
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+  ],
   branches: [
     "+([0-9])?(.{+([0-9]),x}).x",
     "main",
