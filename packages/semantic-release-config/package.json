@@ -1,10 +1,15 @@
 {
   "name": "@deopea.os/semantic-release-config",
   "version": "1.0.0",
+  "private": false,
   "description": "semantic-release config used by residents of deopea",
   "type": "commonjs",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "build": "tsc"
   },

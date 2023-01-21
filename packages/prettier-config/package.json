@@ -1,10 +1,15 @@
 {
   "name": "@deopea.os/prettier-config",
   "version": "1.0.0",
+  "private": false,
   "description": "prettier config used by the residents of deopea",
   "type": "commonjs",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "build": "tsc",
     "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" .",
