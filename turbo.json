@@ -16,7 +16,6 @@
       "outputs": [".turbo/.eslintcache"]
     },
     "release": {
-      "dependsOn": ["^build"],
       "env": ["GITHUB_TOKEN", "NPM_TOKEN"],
       "cache": false
     },
