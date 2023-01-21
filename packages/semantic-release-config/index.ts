@@ -13,8 +13,8 @@ const config: Options = {
     ],
     "@semantic-release/changelog",
     "@semantic-release/npm",
-    "@semantic-release/github",
     "@semantic-release/git",
+    "@semantic-release/github",
   ],
   branches: [
     "+([0-9])?(.{+([0-9]),x}).x",
