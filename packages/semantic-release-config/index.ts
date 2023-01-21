@@ -5,7 +5,13 @@ const config: Options = {
   plugins: [
     [
       "@semantic-release/commit-analyzer",
-      { config: "@deopea.os/conventional-changelog" },
+      {
+        config: "@deopea.os/conventional-changelog",
+        releaseRules: [
+          { type: "docs", scope: "README", release: "patch" },
+          { type: "refactor", release: "patch" },
+        ],
+      },
     ],
     [
       "@semantic-release/release-notes-generator",
