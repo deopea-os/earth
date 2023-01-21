@@ -16,7 +16,7 @@
     "lint": "turbo run lint",
     "fmt": "turbo run fmt",
     "prepare": "node scripts/prepare",
-    "release": "npm run -ws release",
+    "release": "turbo run release",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch"
   },
