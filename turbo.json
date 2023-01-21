@@ -17,7 +17,7 @@
     },
     "release": {
       "env": ["GITHUB_TOKEN", "NPM_TOKEN"],
-      "cache": false
+      "outputs": ["package*.json", "CHANGELOG.md"]
     },
     "test": {},
     "test:watch": {
