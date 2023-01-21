@@ -13,6 +13,7 @@ const config: Options = {
     ],
     "@semantic-release/changelog",
     "@semantic-release/npm",
+    "@semantic-release/github",
     "@semantic-release/git",
   ],
   branches: [
