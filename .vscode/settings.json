@@ -1,18 +1,4 @@
 {
   "cSpell.words": ["deopea"],
-  "conventionalCommits.scopes": [
-    "build",
-    "chore",
-    "ci",
-    "config",
-    "deps",
-    "docs",
-    "feat",
-    "fix",
-    "perf",
-    "refactor",
-    "revert",
-    "style",
-    "test"
-  ]
+  "conventionalCommits.scopes": ["release"]
 }
