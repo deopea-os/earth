@@ -1,5 +1,9 @@
 Changelog
 
+## 1.1.0 (2023-01-21)
+
+* feat(packages/semantic-release-config): adds release rules ([f057257](https://github.com/deopea-os/earth/commit/f057257))
+
 ## 1.0.0 (2023-01-21)
 
 * chore: adds bugs url for packages and apps ([2892b00](https://github.com/deopea-os/earth/commit/2892b00))
