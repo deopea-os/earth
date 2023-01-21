@@ -3,12 +3,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [
-        "dist/**",
-        "packages/**/*.d.ts",
-        "packages/**/*.js",
-        "!release.config.js"
-      ]
+      "outputs": ["dist/**", "*.d.ts", "*.js", "!release.config.js"]
     },
     "dev": {
       "cache": false,
