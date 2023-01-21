@@ -11,7 +11,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@deopea.os/conventional-changelog": "^1.0.0",
