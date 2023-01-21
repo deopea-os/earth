@@ -3,7 +3,7 @@
  */
 module.exports = {
   root: true,
-  extends: ["@deopea.os/eslint-config"],
+  extends: ["@deopea.os/eslint-config", "turbo"],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ["./tsconfig.json"],
