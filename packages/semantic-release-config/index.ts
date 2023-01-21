@@ -11,7 +11,7 @@ const config: Options = {
       "@semantic-release/release-notes-generator",
       { config: "@deopea.os/conventional-changelog" },
     ],
-    "@semantic-release/changelog",
+    ["@semantic-release/changelog", { changelogTitle: "Changelog" }],
     "@semantic-release/npm",
     "@semantic-release/git",
     "@semantic-release/github",
