@@ -48,4 +48,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npm i -g npm@9
-          npm run release
+          npm run release --concurrency=1
