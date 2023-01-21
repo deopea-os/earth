@@ -29,5 +29,8 @@
   "homepage": "https://github.com/deopea-os/earth/tree/main/packages/tsconfig",
   "bugs": {
     "url": "https://github.com/deopea-os/earth/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

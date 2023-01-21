@@ -43,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/deopea-os/earth/issues"
   },
-  "homepage": "https://github.com/deopea-os/earth/tree/main/packages/semantic-release-config"
+  "homepage": "https://github.com/deopea-os/earth/tree/main/packages/semantic-release-config",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -42,5 +42,8 @@
   "homepage": "https://github.com/deopea-os/earth/tree/main/packages/commitlint-config",
   "bugs": {
     "url": "https://github.com/deopea-os/earth/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

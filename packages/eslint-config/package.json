@@ -45,5 +45,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/deopea-os/earth/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
