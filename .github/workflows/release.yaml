@@ -46,6 +46,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm i -g npm@9
-          npm run release --concurrency=1
+        run: npm run release --concurrency=1
