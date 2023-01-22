@@ -1,5 +1,11 @@
 Changelog
 
+## 1.2.0 (2023-01-22)
+
+* chore(release): 1.0.1 [skip ci] ([20be080](https://github.com/deopea-os/earth/commit/20be080))
+* feat(apps/earth): adds vanilla extract and renames head ([864b407](https://github.com/deopea-os/earth/commit/864b407))
+* fix(packages/tsconfig): fixes browser config ([41cd93f](https://github.com/deopea-os/earth/commit/41cd93f))
+
 ## 1.1.0 (2023-01-21)
 
 * feat(packages/semantic-release-config): adds release rules ([f057257](https://github.com/deopea-os/earth/commit/f057257))
