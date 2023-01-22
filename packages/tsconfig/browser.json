@@ -3,6 +3,7 @@
   "display": "Browser",
   "extends": "./base.json",
   "compilerOptions": {
+    "moduleResolution": "Node",
     "lib": ["DOM", "DOM.Iterable", "WebWorker"],
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik"
