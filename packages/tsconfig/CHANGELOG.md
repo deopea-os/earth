@@ -1,3 +1,9 @@
+Changelog
+
+## @deopea.os/tsconfig-v1.0.1 (2023-01-22)
+
+* fix(packages/tsconfig): fixes browser config ([41cd93f](https://github.com/deopea-os/earth/commit/41cd93f))
+
 ## @deopea.os/tsconfig-v1.0.0 (2023-01-21)
 
 * chore: adds bugs url for packages and apps ([2892b00](https://github.com/deopea-os/earth/commit/2892b00))

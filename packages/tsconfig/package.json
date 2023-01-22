@@ -1,6 +1,6 @@
 {
   "name": "@deopea.os/tsconfig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "tsconfigs used by residents of deopea",
   "main": "base.json",
