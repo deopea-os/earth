@@ -1,13 +1,19 @@
 {
   "extends": "@deopea.os/tsconfig/browser",
   "compilerOptions": {
-    "outDir": "tmp",
+    "baseUrl": "src",
+    "outDir": "dist",
 
     "incremental": true,
     "isolatedModules": true,
     "noEmit": true,
 
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+
+    "paths": {
+      "components": ["components"],
+      "routes": ["routes"]
+    }
   },
   "files": ["./vite.config.ts"],
   "include": ["src"]

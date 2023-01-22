@@ -1,6 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
-import Footer from "../components/footer/Footer.js";
-import Header from "../components/header/Header.js";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
 export default component$(() => {
   return (
