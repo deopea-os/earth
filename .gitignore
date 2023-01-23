@@ -29,9 +29,11 @@ dist
 lib
 lib-types
 
-# local env files
-.env.local
-.env.*.local
+# env files
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
 
 # turbo
 .turbo
