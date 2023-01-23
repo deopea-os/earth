@@ -11,8 +11,9 @@
     "types": ["vite/client"],
 
     "paths": {
-      "components": ["components"],
-      "routes": ["routes"]
+      "components/*": ["components/*"],
+      "routes/*": ["routes/*"],
+      "utils/*": ["utils/*"]
     }
   },
   "files": ["./vite.config.ts"],
