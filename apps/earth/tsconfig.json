@@ -8,13 +8,7 @@
     "isolatedModules": true,
     "noEmit": true,
 
-    "types": ["vite/client"],
-
-    "paths": {
-      "components/*": ["components/*"],
-      "routes/*": ["routes/*"],
-      "utils/*": ["utils/*"]
-    }
+    "types": ["vite/client"]
   },
   "files": ["./vite.config.ts"],
   "include": ["src"]

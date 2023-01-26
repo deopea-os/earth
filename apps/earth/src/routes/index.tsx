@@ -1,10 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { sprinkles } from "css/sprinkles.css";
 
 export default component$(() => {
   return (
     <div>
-      <h1>Welcome to Deopea!</h1>
+      <h1 class={sprinkles({})}>Welcome to Deopea!</h1>
     </div>
   );
 });
