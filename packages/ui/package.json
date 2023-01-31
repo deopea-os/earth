@@ -1,0 +1,48 @@
+{
+  "name": "@deopea.os/ui",
+  "version": "1.0.0-alpha.1",
+  "private": false,
+  "description": "qwik components for maintained by deopea",
+  "type": "module",
+  "module": "./lib/index.js",
+  "qwik": "./lib/index.qwik.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/index.qwik.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "qwik build",
+    "build.lib": "vite build --mode lib",
+    "postbuild": "tsc --project tsconfig.build.json --emitDeclarationOnly",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint",
+    "release": "semantic-release",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "*",
+    "@deopea.os/eslint-config": "^1.0.0",
+    "@deopea.os/tsconfig": "^1.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "eslint": "^8.31.0",
+    "eslint-plugin-qwik": "^0.16.2",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": "^0.16.2"
+  }
+}

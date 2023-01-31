@@ -1,0 +1,14 @@
+{
+  "extends": "@deopea.os/tsconfig/browser",
+  "compilerOptions": {
+    "baseUrl": "src",
+
+    "outDir": "lib",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    "incremental": true,
+    "isolatedModules": true
+  },
+  "include": ["src"]
+}
