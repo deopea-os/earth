@@ -1,7 +1,6 @@
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { resolve } from "path";
-import { vanillaExtractPlugin } from "styled-vanilla-extract/vite";
 import { Alias, defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
@@ -12,7 +11,7 @@ const aliases = ["components", "css", "routes", "utils"].map<Alias>((id) => ({
 
 export default defineConfig(() => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), vanillaExtractPlugin()],
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
     resolve: {
       alias: aliases,
     },

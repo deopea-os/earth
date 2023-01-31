@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-const Footer = component$(() => {
+export const Footer = component$(() => {
   return (
     <footer>
       <a href="/">Made with ♡ by Deopea</a>

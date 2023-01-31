@@ -5,6 +5,6 @@ module.exports = {
   extends: ["@deopea.os/eslint-config/browser"],
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ["./tsconfig.json"],
+    project: ["./tsconfig.json", "./tsconfig.eslint.json"],
   },
 };

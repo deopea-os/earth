@@ -4,7 +4,7 @@ import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 /**
  * The Head component is placed inside of the document `<head>` element.
  */
-const Head = component$(() => {
+export const Head = component$(() => {
   const head = useDocumentHead();
   const loc = useLocation();
 

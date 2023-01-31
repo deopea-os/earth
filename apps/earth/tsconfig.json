@@ -8,8 +8,7 @@
     "isolatedModules": true,
     "noEmit": true,
 
-    "types": ["vite/client"]
+    "typeRoots": ["typings"]
   },
-  "files": ["./vite.config.ts"],
-  "include": ["src"]
+  "include": ["src", "typings"]
 }
