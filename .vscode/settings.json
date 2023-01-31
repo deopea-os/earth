@@ -1,4 +1,5 @@
 {
+  "conventionalCommits.scopes": ["release"],
   "cSpell.words": ["deopea"],
-  "conventionalCommits.scopes": ["release"]
+  "css.lint.unknownAtRules": "ignore"
 }
