@@ -19,7 +19,7 @@ const config: TSESLint.Linter.Config = {
   plugins: ["@typescript-eslint"],
   overrides: [
     {
-      files: ["**/*.cjs"],
+      files: ["**/*.{js,cjs}"],
       env: {
         commonjs: true,
         node: true,
@@ -29,6 +29,9 @@ const config: TSESLint.Linter.Config = {
       },
     },
   ],
+  rules: {
+    "@typescript-eslint/no-empty-interface": "off",
+  },
 };
 
 export = config;
