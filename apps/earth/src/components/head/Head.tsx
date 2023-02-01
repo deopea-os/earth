@@ -37,5 +37,3 @@ export const Head = component$(() => {
     </head>
   );
 });
-
-export default Head;

@@ -3,8 +3,8 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   return (
-    <div>
-      <h1 class="prose prose-h1">Welcome to Deopea!</h1>
+    <div class="mx-8 min-h-screen md:container md:mx-auto md:px-8">
+      <div class="hero"></div>
     </div>
   );
 });

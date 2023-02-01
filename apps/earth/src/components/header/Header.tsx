@@ -1,26 +1,26 @@
 import { component$ } from "@builder.io/qwik";
-import { useNavigate } from "@builder.io/qwik-city";
-import { BaseButton } from "components/button";
+import { Button } from "components/button";
+import { Link } from "components/link";
+import { LinkButton } from "components/link/LinkButton";
 
 export const Header = component$(() => {
-  const navigate = useNavigate();
   return (
-    <header class="p-2 flex">
-      <div class="flex-1">
-        <a onClick$={() => navigate("/")} href="/">
+    <header class="navbar flex py-4 px-8 font-mono">
+      <div class="navbar-start">
+        <Link class="font-mono uppercase" href="/">
           deopea
-        </a>
+        </Link>
       </div>
-      <nav class="flex justify-between space-x-2">
-        <a>What we do</a>
-        <a>About Us</a>
-        <a>The Team</a>
+      <nav class="navbar-center hidden md:block">
+        <LinkButton class="btn-sm">What we do</LinkButton>
+        <LinkButton class="btn-sm">About Us</LinkButton>
+        <LinkButton class="btn-sm">The Team</LinkButton>
       </nav>
-      <div class="flex-1 flex justify-end">
-        <BaseButton>Contact Us</BaseButton>
+      <div class="navbar-end">
+        <Button variant="outlined" size="sm">
+          Contact Us
+        </Button>
       </div>
     </header>
   );
 });
-
-export default Header;
