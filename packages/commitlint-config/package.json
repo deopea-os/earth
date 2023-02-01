@@ -22,8 +22,8 @@
     "typescript": "*"
   },
   "peerDependencies": {
-    "@commitlint/config-conventional": "^17.4.2",
-    "typescript": "^4.9.4"
+    "@commitlint/config-conventional": "^17.4.0",
+    "typescript": "^4.9.0"
   },
   "repository": {
     "type": "git",
