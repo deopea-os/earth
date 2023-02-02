@@ -1,0 +1,25 @@
+@keyframes blob {
+  from {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0) rotate(-90deg);
+  }
+  to {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%) rotate(-10deg);
+  }
+}
+
+@keyframes blob2 {
+  from {
+    top: 10px;
+    left: 10px;
+    transform: translate(10, 10) rotate(-90deg);
+  }
+  to {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%) rotate(-10deg);
+  }
+}

@@ -1,7 +1,9 @@
-import { Counter } from './components/counter/counter';
-import { Logo } from './components/logo/logo';
+import { component$, useStyles$ } from "@builder.io/qwik/core";
+import { BaseButton } from "./button";
+import globalStyles from "./global.css?inline";
 
-export default () => {
+export default component$(() => {
+  useStyles$(globalStyles);
   return (
     <>
       <head>
@@ -9,9 +11,8 @@ export default () => {
         <title>Qwik Blank App</title>
       </head>
       <body>
-        <Logo />
-        <Counter />
+        <BaseButton>Button</BaseButton>
       </body>
     </>
   );
-};
+});

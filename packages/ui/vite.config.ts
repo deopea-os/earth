@@ -1,10 +1,14 @@
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig(() => {
   return {
+    plugins: [qwikVite(), tsconfigPaths()],
+    server: {
+      port: 4002,
+    },
     build: {
-      plugins: [qwikVite()],
       target: "es2017",
       outDir: "lib",
       rollupOptions: {

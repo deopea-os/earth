@@ -5,7 +5,7 @@ import { LinkButton } from "components/link/LinkButton";
 
 export const Header = component$(() => {
   return (
-    <header class="navbar flex py-4 px-8 font-mono">
+    <header class="navbar flex border-b bg-transparent py-4 px-8 font-mono backdrop-blur-sm">
       <div class="navbar-start">
         <Link class="font-mono uppercase" href="/">
           deopea
