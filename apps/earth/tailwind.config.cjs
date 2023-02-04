@@ -25,6 +25,44 @@ module.exports = {
         mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
         sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
+      keyframes: {
+        "fade-in": {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
+        "blob": {
+          from: {
+            top: "-20px",
+            left: "-20px",
+            transform: "translate(-20px, -20px) rotate(-90deg)",
+          },
+          to: {
+            top: "100%",
+            left: "100%",
+            transform: "translate(-100%, -100%) rotate(-10deg)",
+          },
+        },
+        "blob2": {
+          from: {
+            top: "-10px",
+            left: "-10px",
+            transform: "translate(-10px, -10px) rotate(90deg)",
+          },
+          to: {
+            top: "100%",
+            left: "100%",
+            transform: "translate(-100%, -100%) rotate(-10deg)",
+          },
+        },
+      },
+      animation: {
+        blob: "blob 25s ease-in-out infinite alternate",
+        blob2: "blob2 25s ease-in-out 1s both infinite alternate",
+      },
       // colors: {
       //   primary: {
       //     "default": "#ffb3af",
