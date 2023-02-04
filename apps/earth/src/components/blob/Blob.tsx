@@ -16,6 +16,7 @@ export const Blob = component$<BlobProps>(({ color = "primary", ...props }) => {
     secondary: "fill-secondary",
     accent: "fill-accent",
   });
+
   return (
     <svg
       {...props}
