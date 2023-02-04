@@ -6,18 +6,15 @@ export default component$(() => {
   return (
     <>
       <AnimatedBlobs class="fixed inset-0" />
-      <div class="mx-8 h-full md:container md:mx-auto md:px-8">
-        <div class="hero">
-          <div class="hero-overlay backdrop-blur-sm" />
-          <div class="hero-content py-16">
-            <div class="max-w-md text-center">
-              <p class="prose-base font-mono">
-                We are<span>....</span>
-              </p>
-              <div class="prose-2xl whitespace-nowrap font-mono uppercase">
-                <div class="invisible relative h-0">Devs Of Planet Earth</div>
-                <div
-                  class="group relative flex justify-center hover:normal-case
+      <div class="border-neutral mt-8 flex items-center justify-center border-y py-16 backdrop-blur-sm md:container md:mx-auto md:rounded md:border">
+        <div class="max-w-full text-center">
+          <p class="prose-base font-mono">
+            We are<span class="">....</span>
+          </p>
+          <div class="xs:text-3xl whitespace-nowrap font-mono text-3xl uppercase sm:text-4xl md:text-5xl">
+            <div class="invisible relative h-0">Devs Of Planet Earth</div>
+            <div
+              class="group relative flex justify-center hover:normal-case
                   [&>span]:inline-block
                   [&>span]:w-0
                   [&>span]:max-w-fit
@@ -30,14 +27,12 @@ export default component$(() => {
                   [&>span]:hover:w-full
                   [&>span]:hover:opacity-100
                   [&>span]:hover:[transition-delay:0ms]"
-                >
-                  De
-                  <span>vs&nbsp;</span>O<span>f&nbsp;</span>P
-                  <span>lanet&nbsp;</span>
-                  Ea
-                  <span>rth</span>
-                </div>
-              </div>
+            >
+              De
+              <span>vs&nbsp;</span>O<span>f&nbsp;</span>P
+              <span>lanet&nbsp;</span>
+              Ea
+              <span>rth</span>
             </div>
           </div>
         </div>
