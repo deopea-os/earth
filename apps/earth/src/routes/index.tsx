@@ -1,8 +1,20 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStyles$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { AnimatedBlobs } from "components/blob";
+import styles from "./index.css?inline";
 
 export default component$(() => {
+  useStyles$(styles);
+
+  const expansionClasses = [
+    "w-0",
+    "max-w-fit",
+    "overflow-hidden",
+    "[transition:width_1000ms,margin-right_500ms]",
+    "group-hover:mr-[0.5em]",
+    "group-hover:w-full",
+  ];
+
   return (
     <>
       <AnimatedBlobs class="fixed inset-0" />
@@ -11,29 +23,15 @@ export default component$(() => {
           <p class="prose-base font-mono">
             We are<span class="">....</span>
           </p>
-          <div class="xs:text-3xl whitespace-nowrap font-mono text-3xl uppercase sm:text-4xl md:text-5xl">
-            <div class="invisible relative h-0">Devs Of Planet Earth</div>
-            <div
-              class="group relative flex justify-center hover:normal-case
-                  [&>span]:inline-block
-                  [&>span]:w-0
-                  [&>span]:max-w-fit
-                  [&>span]:overflow-hidden
-                  [&>span]:opacity-0
-                  [&>span]:[transition-property:width,opacity]
-                  [&>span]:[transition-timing-function:ease-out]
-                  [&>span]:[transition-duration:750ms]
-                  [&>span]:[transition-delay:0ms,750ms]
-                  [&>span]:hover:w-full
-                  [&>span]:hover:opacity-100
-                  [&>span]:hover:[transition-delay:0ms]"
-            >
+          <div class="whitespace-nowrap font-mono text-3xl uppercase sm:text-4xl md:text-5xl">
+            <p class="invisible relative h-0">Devs Of Planet Earth</p>
+            <p class="group flex select-none justify-center py-1 hover:normal-case">
               De
-              <span>vs&nbsp;</span>O<span>f&nbsp;</span>P
-              <span>lanet&nbsp;</span>
-              Ea
-              <span>rth</span>
-            </div>
+              <span class={expansionClasses}>vs</span>O
+              <span class={expansionClasses}>f</span>P
+              <span class={expansionClasses}>lanet</span>
+              Ea<span class={expansionClasses}>rth</span>
+            </p>
           </div>
         </div>
       </div>
