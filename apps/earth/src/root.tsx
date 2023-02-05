@@ -12,7 +12,7 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <Head />
-      <body lang="en" class="flex h-full flex-col">
+      <body lang="en" class="selection:bg-secondary flex h-full flex-col">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
