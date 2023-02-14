@@ -1,11 +1,8 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { AnimatedBlobs } from "components/blob";
-import styles from "./index.css?inline";
 
 export default component$(() => {
-  useStyles$(styles);
-
   const expansionClasses = [
     "w-0",
     "max-w-fit",
