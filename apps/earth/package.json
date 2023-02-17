@@ -24,9 +24,12 @@
     "start": "node server/entry.express.js",
     "qwik": "qwik"
   },
-  "devDependencies": {
+  "dependencies": {
     "@builder.io/qwik": "^0.18.1",
     "@builder.io/qwik-city": "^0.2.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
     "@deopea.os/eslint-config": "^1.0.0",
     "@deopea.os/tsconfig": "^1.0.0",
     "@tailwindcss/typography": "^0.5.9",

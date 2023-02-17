@@ -1,48 +1,17 @@
-# * Pruner * #
-FROM node:18 AS pruner
+FROM node:18
 
-WORKDIR /app
+WORKDIR /usr/local/earth
 
-COPY ./ ./
+COPY package*.json ./
+COPY apps/earth/package.json apps/earth/package.json
 
-# Prune
-RUN npx -y turbo prune --scope="@deopea.os/earth" --docker
-# * Pruner * #
+RUN npm -w apps/earth ci --omit="dev" --ignore-scripts
 
-# * Builder * #
-FROM node:18 AS builder
-
-WORKDIR /app
-
-# Install
-COPY .gitignore ./
-COPY --from=pruner \
-  # sources
-  /app/out/json/ \
-  /app/out/package-lock.json \
-  # destination
-  ./
-
-# Install
-RUN npm ci --omit="dev"
-
-# Build
-COPY --from=pruner /app/out/full/ ./
-RUN npx turbo build --filter="@deopea.os/earth"
-# * Builder * #
-
-# * Runner * #
-FROM node:18 AS runner
-
-WORKDIR /app
-
-# User
 RUN addgroup --system --gid 1001 app
 RUN adduser --system --uid 1001 app
 USER app
 
-COPY --from=builder /app/apps/earth/package.json .
-COPY --from=builder --chown=app:app /app/apps/earth/dist dist
-COPY --from=builder --chown=app:app /app/apps/earth/server server
+COPY --chown=app:app apps/earth/dist apps/earth/dist
+COPY --chown=app:app apps/earth/server apps/earth/server
 
-CMD npm start
+CMD npm -w apps/earth start
