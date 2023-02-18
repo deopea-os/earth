@@ -1,3 +1,10 @@
+Changelog
+
+## @deopea.os/eslint-config-v1.1.0 (2023-02-18)
+
+* feat(packages/eslint-config,packages/tsconfig): adds qwik configs ([ff69388](https://github.com/deopea-os/earth/commit/ff69388))
+* feat(packages/eslint-config): changes base config ([283b5c8](https://github.com/deopea-os/earth/commit/283b5c8))
+
 ## @deopea.os/eslint-config-v1.0.0 (2023-01-21)
 
 * chore: adds bugs url for packages and apps ([2892b00](https://github.com/deopea-os/earth/commit/2892b00))
