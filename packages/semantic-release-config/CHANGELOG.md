@@ -1,5 +1,19 @@
 Changelog
 
+## 1.3.0 (2023-02-18)
+
+* chore(apps/earth,package.json): adds dotenv script ([6694a5d](https://github.com/deopea-os/earth/commit/6694a5d))
+* config(apps/earth,tsconfig): adds and fixes paths values ([b189307](https://github.com/deopea-os/earth/commit/b189307))
+* feat(packages/eslint-config,packages/tsconfig): adds qwik configs ([ff69388](https://github.com/deopea-os/earth/commit/ff69388))
+* deps: fixes dependencies ([8d320e6](https://github.com/deopea-os/earth/commit/8d320e6))
+* config(gitignore): adds dotenv files ([8b0d6d0](https://github.com/deopea-os/earth/commit/8b0d6d0))
+* config(vscode): changes workspace settings ([35ea52b](https://github.com/deopea-os/earth/commit/35ea52b))
+* feat(apps/earth): changes root and head ([10d5a19](https://github.com/deopea-os/earth/commit/10d5a19))
+* feat(apps/earth): many changes and fixes for changing to tailwind ([fe7dec7](https://github.com/deopea-os/earth/commit/fe7dec7))
+* feat(packages/eslint-config): changes base config ([283b5c8](https://github.com/deopea-os/earth/commit/283b5c8))
+* refactor(apps/earth): many changes for vanilla extract css ([601cfa1](https://github.com/deopea-os/earth/commit/601cfa1))
+* chore(apps/earth): adds dotenv vault ([8e730cb](https://github.com/deopea-os/earth/commit/8e730cb))
+
 ## 1.2.0 (2023-01-22)
 
 * chore(release): 1.0.1 [skip ci] ([20be080](https://github.com/deopea-os/earth/commit/20be080))

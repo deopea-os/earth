@@ -1,6 +1,6 @@
 {
   "name": "@deopea.os/semantic-release-config",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": false,
   "description": "semantic-release config used by residents of deopea",
   "type": "commonjs",
