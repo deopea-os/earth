@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Qwik",
-  "extends": ["./node.json", "./browser.json"],
+  "extends": "./browser.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik"

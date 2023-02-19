@@ -1,4 +1,5 @@
 FROM node:18
+ARG PORT
 
 WORKDIR /usr/local/earth
 
@@ -13,5 +14,9 @@ USER app
 
 COPY --chown=app:app apps/earth/dist apps/earth/dist
 COPY --chown=app:app apps/earth/server apps/earth/server
+
+ENV PORT=$PORT
+
+EXPOSE 4000
 
 CMD npm -w apps/earth start

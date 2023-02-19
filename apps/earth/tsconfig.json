@@ -1,5 +1,5 @@
 {
-  "extends": "@deopea.os/tsconfig/browser",
+  "extends": "@deopea.os/tsconfig/qwik",
   "compilerOptions": {
     "baseUrl": "src",
     "outDir": "dist",

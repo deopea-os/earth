@@ -11,9 +11,19 @@ const aliases = ["components", "css", "routes", "utils"].map<Alias>((id) => ({
 
 export default defineConfig(() => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
+    plugins: [
+      qwikCity(),
+      qwikVite({ ssr: { input: "src/server/entry.ssr.tsx" } }),
+      tsconfigPaths(),
+    ],
     resolve: {
-      alias: aliases,
+      alias: [
+        ...aliases,
+        {
+          find: "@builder.io/qwik/core",
+          replacement: "@builder.io/qwik",
+        },
+      ],
     },
     preview: {
       headers: {

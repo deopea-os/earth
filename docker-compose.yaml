@@ -2,9 +2,9 @@ version: "3"
 
 services:
   earth:
-    container_name: earth
+    container_name: app
     build: 
       context: .
       dockerfile: apps/earth/Dockerfile
     ports:
-      - 8080:4173
+      - 3000:3000
