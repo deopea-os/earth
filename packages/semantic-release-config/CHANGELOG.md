@@ -1,5 +1,31 @@
 Changelog
 
+## 1.4.0-alpha.1 (2023-02-19)
+
+* build(apps/earth): changes and fixes for docker build ([f84f36b](https://github.com/deopea-os/earth/commit/f84f36b))
+* build(apps/earth): changes and improvements to docker build ([7fa4d79](https://github.com/deopea-os/earth/commit/7fa4d79))
+* config(apps/earth,tailwind): adds blobs keyframes and animations ([a047d43](https://github.com/deopea-os/earth/commit/a047d43))
+* Merge branch 'main' into alpha ([562da5e](https://github.com/deopea-os/earth/commit/562da5e))
+* chore(apps/earth): removes server build files ([b9adc79](https://github.com/deopea-os/earth/commit/b9adc79))
+* chore(packages/ui): removes ui package ([4a9ed26](https://github.com/deopea-os/earth/commit/4a9ed26))
+* chore(release): 1.1.0 [skip ci] ([f2fd352](https://github.com/deopea-os/earth/commit/f2fd352))
+* feat(apps/earth): adds animated blobs component ([113a6db](https://github.com/deopea-os/earth/commit/113a6db))
+* feat(apps/earth): adds blobs and blob animations to homepage ([d2de1c3](https://github.com/deopea-os/earth/commit/d2de1c3))
+* feat(apps/earth): adds hero section with expanding text ([9fc37fd](https://github.com/deopea-os/earth/commit/9fc37fd))
+* feat(apps/earth): adds positive z-index to header ([c7ab05b](https://github.com/deopea-os/earth/commit/c7ab05b))
+* feat(apps/earth): adds root page and implements daisyui ([9e92668](https://github.com/deopea-os/earth/commit/9e92668))
+* feat(apps/earth): changes selection colour ([be0617a](https://github.com/deopea-os/earth/commit/be0617a))
+* feat(apps/earth): starts adding in deployment ([aa8a78e](https://github.com/deopea-os/earth/commit/aa8a78e))
+* feat(packages/ui): adds base button component ([c9acca3](https://github.com/deopea-os/earth/commit/c9acca3))
+* feat(packages/ui): adds new ui package ([a0e1a21](https://github.com/deopea-os/earth/commit/a0e1a21))
+* refactor(apps/earth): improves css ([1a964f1](https://github.com/deopea-os/earth/commit/1a964f1))
+* refactor(apps/earth): reduces amount of css ([3de7024](https://github.com/deopea-os/earth/commit/3de7024))
+* refactor(packages/ui): changes postcss and tailwind configs to have cjs extension ([aba71de](https://github.com/deopea-os/earth/commit/aba71de))
+* style(apps/earth): adds line ([9c369b5](https://github.com/deopea-os/earth/commit/9c369b5))
+* config(prettier): adds tailwind plugin ([49ba582](https://github.com/deopea-os/earth/commit/49ba582))
+* deps: adds tailwind prettier plugin ([0ced9cd](https://github.com/deopea-os/earth/commit/0ced9cd))
+* deps: updates peer dependency versions ([aca0815](https://github.com/deopea-os/earth/commit/aca0815))
+
 ## 1.3.0 (2023-02-18)
 
 * chore(apps/earth,package.json): adds dotenv script ([6694a5d](https://github.com/deopea-os/earth/commit/6694a5d))
