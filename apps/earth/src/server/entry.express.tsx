@@ -42,5 +42,7 @@ app
   // Use Qwik City's 404 handler
   .use(notFound)
   .listen({ port: PORT }, (error) => {
-    if (error) return app.log.error(error);
+    if (!error) return;
+    app.log.error(error);
+    process.exit(1);
   });

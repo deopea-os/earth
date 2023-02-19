@@ -17,6 +17,6 @@ COPY --chown=app:app apps/earth/server apps/earth/server
 
 ENV PORT=$PORT
 
-EXPOSE 4000
+EXPOSE $PORT
 
 CMD npm -w apps/earth start
