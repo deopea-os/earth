@@ -1,24 +1,26 @@
 import * as apigateway from "aws-cdk-lib/aws-apigateway";
-import * as lambda from "aws-cdk-lib/aws-lambda";
 import { Construct } from "constructs";
+import { ClientLambda } from "./client.js";
+
+interface APIStackProps {
+  env: "production" | "staging";
+}
 
 export class APIStack extends Construct {
-  constructor(scope: Construct, id: string) {
+  constructor(scope: Construct, id: string, props: APIStackProps) {
     super(scope, id);
 
     const api = new apigateway.RestApi(this, "earth-api", {
       restApiName: "Earth API",
-      description: "API for Deopea/Earth",
+      description: "API for deopea/earth",
     });
 
-    const ssrHandler = new lambda.DockerImageFunction(this, "ClientHandler", {
-      code: lambda.DockerImageCode.fromImageAsset(__dirname),
-    });
-
-    const ssrRoot = api.root.addResource("/ssr");
-    ssrRoot.addMethod(
-      "GET",
-      new apigateway.LambdaIntegration(ssrHandler, { proxy: true }),
-    );
+    const client = new ClientLambda(this, "ClientLambda", props);
+    api.root
+      .addResource("ssr")
+      .addMethod(
+        "GET",
+        new apigateway.LambdaIntegration(client.handler, { proxy: true }),
+      );
   }
 }
