@@ -40,3 +40,6 @@ server
 # turbo
 .turbo
 out
+
+# deploy
+cdk.out
