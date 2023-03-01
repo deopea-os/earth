@@ -1,8 +1,15 @@
 import { join, resolve } from "node:path";
+import dotenv = require("dotenv-vault-core");
 
-// eslint-disable-next-line turbo/no-undeclared-env-vars
-export const PORT = parseInt(process.env.PORT ?? "3000");
+const { error, parsed } = dotenv.config();
 
-// Directories where the static assets are located
-export const DIST_DIR = resolve("dist");
-export const BUILD_DIR = join(DIST_DIR, "build");
+if (error || !parsed) {
+  console.error("config_not_initialised");
+  process.exit(1);
+}
+
+export const {
+  PORT = "4040",
+  DIST_DIR = resolve("dist"),
+  BUILD_DIR = join(DIST_DIR, "build"),
+} = parsed;
