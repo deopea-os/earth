@@ -17,6 +17,11 @@ export class ClientLambda extends Construct {
     const ClientCode = new DockerImageAsset(this, "ClientImage", {
       directory: cwd(),
       file: join("apps", "earth", "Dockerfile"),
+      buildArgs: {
+        PORT: process.env.PORT as string,
+        NODE_ENV: props.env,
+        DOTENV_KEY: process.env.DOTENV_KEY as string,
+      },
     });
 
     this.handler = new lambda.DockerImageFunction(this, "ClientHandler", {
