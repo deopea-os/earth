@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 /*
  * WHAT IS THIS FILE?
  *
@@ -38,10 +37,12 @@ await app
 
 app
   // Use Qwik City's page and endpoint request handler
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
   .use(router)
   // Use Qwik City's 404 handler
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
   .use(notFound)
-  .listen({ port: PORT }, (error) => {
+  .listen({ port: parseInt(PORT) }, (error) => {
     if (!error) return;
     app.log.error(error);
     process.exit(1);
