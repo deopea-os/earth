@@ -1,7 +1,5 @@
 import type { Config } from "conventional-changelog-config-spec";
-import conventionalConfig, {
-  ResolvedConfig,
-} from "conventional-changelog-conventionalcommits";
+import conventionalConfig = require("conventional-changelog-conventionalcommits");
 
 const config: Config = {
   types: [
@@ -21,7 +19,7 @@ const config: Config = {
   ],
 };
 
-const options: ResolvedConfig & { config: typeof config } = {
+const options: conventionalConfig.ResolvedConfig & { config: typeof config } = {
   ...conventionalConfig(config),
   config,
 };

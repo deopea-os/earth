@@ -1,5 +1,5 @@
-import tsconfig from "@deopea.os/tsconfig";
-import type { TSESLint } from "@typescript-eslint/utils";
+import tsconfig = require("@deopea.os/tsconfig/base.json");
+import type { TSESLint } from "@typescript-eslint/utils/dist";
 
 const config: TSESLint.Linter.Config = {
   extends: [
