@@ -3,29 +3,32 @@
   "version": "1.4.0-alpha.1",
   "private": false,
   "description": "semantic-release config used by residents of deopea",
-  "type": "commonjs",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "type": "module",
+  "main": "lib/index.cjs",
+  "types": "lib/index.d.cts",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "lib"
   ],
   "scripts": {
     "build": "tsc",
     "release": "semantic-release"
   },
-  "devDependencies": {
-    "@deopea.os/conventional-changelog": "^1.0.0",
-    "@deopea.os/eslint-config": "^1.0.0",
-    "@deopea.os/tsconfig": "^1.0.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "semantic-release-monorepo": "^7.0.5",
-    "typescript": "*"
-  },
   "peerDependencies": {
+    "@deopea.os/conventional-changelog": "^1.0.0",
     "semantic-release": "^22.0.0",
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/error": "^3.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "read-pkg-up": "^7.0.1",
+    "simple-git": "^3.20.0"
+  },
+  "devDependencies": {
+    "@types/semantic-release__error": "^3.0.1",
+    "@types/signale": "^1.4.5",
+    "typescript": "*"
   },
   "repository": {
     "type": "git",

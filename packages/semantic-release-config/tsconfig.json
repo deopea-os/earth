@@ -1,7 +1,11 @@
 {
   "extends": "@deopea.os/tsconfig/cjs.json",
   "compilerOptions": {
-    "outDir": "./"
+    "baseUrl": "src",
+    "outDir": "lib",
+
+    "esModuleInterop": false
   },
-  "include": ["*.ts"]
+  "include": ["**/*.cts"],
+  "exclude": ["plugins", "**/*.d.cts"]
 }
