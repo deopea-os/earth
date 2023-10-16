@@ -1,6 +1,6 @@
 {
   "name": "@deopea.os/eslint-config",
-  "version": "1.1.0",
+  "version": "2.0.0-alpha.1",
   "private": false,
   "description": "eslint configs used by residents of deopea",
   "type": "commonjs",
