@@ -1,6 +1,6 @@
 {
   "name": "@deopea.os/commitlint-config",
-  "version": "1.0.0",
+  "version": "2.0.0-alpha.1",
   "private": false,
   "description": "commitlint config used by the residents of deopea",
   "type": "commonjs",
