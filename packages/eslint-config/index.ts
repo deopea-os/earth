@@ -9,7 +9,7 @@ const config: TSESLint.Linter.Config = {
     "prettier",
   ],
   env: {
-    [tsconfig.compilerOptions.module.toLowerCase()]: true,
+    [tsconfig.compilerOptions.target.toLowerCase()]: true,
     "shared-node-browser": true,
   },
   parser: "@typescript-eslint/parser",
