@@ -16,14 +16,12 @@
     "lint": "TIMING=1 eslint --cache --cache-location \".turbo/.eslintcache\"",
     "release": "semantic-release"
   },
-  "devDependencies": {
-    "@deopea.os/eslint-config": "^1.0.0",
-    "@deopea.os/tsconfig": "^1.0.0",
-    "typescript": "*"
-  },
   "peerDependencies": {
     "@commitlint/config-conventional": "^17.4.0",
     "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "*"
   },
   "repository": {
     "type": "git",

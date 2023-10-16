@@ -15,17 +15,15 @@
     "test": "node -r ts-node/register --test index.test.ts",
     "release": "semantic-release"
   },
+  "peerDependencies": {
+    "conventional-changelog": "^5.1.0",
+    "typescript": "^5.0.0"
+  },
   "devDependencies": {
-    "@deopea.os/eslint-config": "^1.0.0",
-    "@deopea.os/tsconfig": "^1.0.0",
     "@types/conventional-changelog": "^3.1.3",
     "@types/conventional-changelog-config-spec": "^2.1.3",
     "@types/node": "^20.8.4",
     "typescript": "*"
-  },
-  "peerDependencies": {
-    "conventional-changelog": "^5.1.0",
-    "typescript": "^5.0.0"
   },
   "keywords": [
     "conventional-changelog",

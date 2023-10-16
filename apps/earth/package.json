@@ -33,8 +33,8 @@
     "fastify": "^4.23.2"
   },
   "devDependencies": {
-    "@deopea.os/eslint-config": "^1.0.0",
-    "@deopea.os/tsconfig": "^1.0.0",
+    "@deopea.os/eslint-config": "*",
+    "@deopea.os/tsconfig": "*",
     "@tailwindcss/typography": "^0.5.10",
     "@types/compression": "^1.7.3",
     "@types/connect": "^3.4.36",

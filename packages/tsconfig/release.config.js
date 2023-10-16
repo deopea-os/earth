@@ -1,4 +1,4 @@
 /**
  * @type {import("semantic-release").Options}
  */
-module.exports = require("../semantic-release-config");
+module.exports = require("@deopea.os/semantic-release-config");
