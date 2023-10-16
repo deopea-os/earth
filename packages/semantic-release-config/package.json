@@ -14,7 +14,7 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "@deopea.os/conventional-changelog": ">=1.0.0",
+    "@deopea.os/conventional-changelog": "*",
     "semantic-release": "^22.0.0",
     "typescript": "^5.0.0"
   },
