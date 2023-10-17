@@ -19,9 +19,11 @@ const config: Config = {
   ],
 };
 
-const options: conventionalConfig.ResolvedConfig & { config: typeof config } = {
+const options = (): conventionalConfig.ResolvedConfig & {
+  config: typeof config;
+} => ({
   ...conventionalConfig(config),
   config,
-};
+});
 
 export = options;

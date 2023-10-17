@@ -4,44 +4,43 @@ import type {
   Commit,
   GenerateNotesContext,
   GlobalConfig,
+  Options,
 } from "semantic-release";
 
 import path = require("path");
 import pkgUp = require("read-pkg-up");
 import simpleGit = require("simple-git");
+import utils = require("./utils.cjs");
 
 const pkg: NormalizedReadResult | undefined = pkgUp.sync();
 const pkgDir = pkg && path.dirname(pkg.path);
 const git = simpleGit.simpleGit();
 
-const verifyConditions = () => {
-  if (!pkg) throw new Error("package.json unavailable");
-};
+let _commitsCache: Record<string, Array<Commit & { include: boolean }>> = {};
+const getPackageCommits = async (commits: readonly Commit[]) =>
+  (_commitsCache[pkg!.packageJson.name] ??= await Promise.all(
+    commits.map(async (cmt) => {
+      const res = await git.show(["--stat", cmt.hash, pkgDir!]);
+      return {
+        ...cmt,
+        include: Boolean(res),
+      };
+    }),
+  ).then((cs) => cs.filter((c) => c.include)));
 
-let commitsToInclude: Array<Commit & { include: boolean }> | null = null;
 const wrapLifecycle =
-  (lifecycle: string) =>
+  (lifecycle: "analyzeCommits" | "generateNotes") =>
   async (
-    config: GlobalConfig,
+    config: Options,
     {
       logger,
-      commits,
+      commits: allCommits,
       ...ctx
     }: (AnalyzeCommitsContext | GenerateNotesContext) & {
       options: GlobalConfig;
     },
   ) => {
-    commitsToInclude ??= await Promise.all(
-      commits.map(async (cmt) => {
-        const res = await git.show(["--stat", cmt.hash, pkgDir!]);
-        logger.debug("Include commit:", cmt.hash, Boolean(res));
-
-        return {
-          ...cmt,
-          include: Boolean(res),
-        };
-      }),
-    ).then((cs) => cs.filter((c) => c.include));
+    const commitsToInclude = await getPackageCommits(allCommits);
 
     if (!commitsToInclude?.length) {
       logger.log("Release does not include changes for package");
@@ -52,16 +51,24 @@ const wrapLifecycle =
     let res: unknown;
     for (const plugin of ctx.options.plugins) {
       const pluginName = typeof plugin === "string" ? plugin : plugin[0];
+      // const pluginOptions =
+      //   typeof plugin === "string"
+      //     ? {}
+      //     : (plugin[1] as Record<string, unknown>);
 
-      const module = await new Function(`return import("${pluginName}");`)();
+      const module = await utils.dynamicImport(pluginName);
       if (!module[lifecycle]) continue;
 
       logger.success("Release workspaces", "loaded plugin", pluginName);
-      res = await module[lifecycle]?.(config, {
-        ...ctx,
-        logger,
-        commits,
-      });
+      res = await module[lifecycle]?.(
+        // TODO: add in plugin options
+        config,
+        {
+          ...ctx,
+          logger,
+          commits: commitsToInclude,
+        },
+      );
       logger.success(
         "Release workspaces",
         "completed step",
@@ -71,14 +78,15 @@ const wrapLifecycle =
       );
     }
 
-    if (lifecycle === "generateNotes") {
-      logger.log(res);
-    }
     return res;
   };
 
+const verifyConditions = () => {
+  if (!pkg) throw new Error("package.json unavailable");
+};
+
 const onComplete = () => {
-  commitsToInclude = null;
+  _commitsCache = {};
 };
 
 export = {
