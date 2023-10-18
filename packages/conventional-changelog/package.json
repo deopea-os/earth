@@ -11,8 +11,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
-    "test": "node -r ts-node/register --test index.test.ts",
+    "build": "tsc",
+    "test": "node --experimental-loader ts-node/esm --test index.test.mts",
     "release": "semantic-release"
   },
   "peerDependencies": {

@@ -1,0 +1,4 @@
+{
+  "extends": ["./tsconfig.json", "@deopea.os/tsconfig/node.json"],
+  "include": ["*.test.*"]
+}

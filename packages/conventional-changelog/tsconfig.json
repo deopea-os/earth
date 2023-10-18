@@ -4,6 +4,7 @@
     "outDir": "./"
   },
   "include": ["*.ts", "typings"],
+  "exclude": ["*.test.*"],
 
   "ts-node": {
     "transpileOnly": true
