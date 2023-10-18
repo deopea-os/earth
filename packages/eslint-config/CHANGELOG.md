@@ -1,5 +1,22 @@
 Changelog
 
+# [2.0.0](https://github.com/deopea-os/earth/compare/@deopea.os/eslint-config-v1.1.0...@deopea.os/eslint-config-v2.0.0) (2023-10-18)
+
+
+### deps
+
+* update dependencies to latest ([0c45445](https://github.com/deopea-os/earth/commit/0c45445de5945e3e6a84ed62487d7a054701687e))
+
+
+### Features
+
+* **eslint-config,tsconfig:** update eslint and ts configs ([a48aa51](https://github.com/deopea-os/earth/commit/a48aa51c07deafd80248ce7f3e2ba76fdb68c953))
+
+
+### BREAKING CHANGES
+
+* updates certain min versions to new major versions
+
 # [2.0.0-alpha.1](https://github.com/deopea-os/earth/compare/@deopea.os/eslint-config-v1.1.0...@deopea.os/eslint-config-v2.0.0-alpha.1) (2023-10-16)
 
 
