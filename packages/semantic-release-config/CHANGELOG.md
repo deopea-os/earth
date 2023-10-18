@@ -1,5 +1,33 @@
 Changelog
 
+# 1.0.0 (2023-10-18)
+
+
+### Bug Fixes
+
+* **packages/semantic-release-config:** changes plugin order ([251e9c8](https://github.com/deopea-os/earth/commit/251e9c8ca2387daddc602bd50aeb85825a47ba3d))
+* **semantic-release-config:** fix commits in package changelogs ([6a17d6d](https://github.com/deopea-os/earth/commit/6a17d6d80abbed5eb84956182011579264f4df4b))
+* updates packages access to public ([1ba63f1](https://github.com/deopea-os/earth/commit/1ba63f10d2b6ebefe9f073f539c20730aae3942d))
+
+
+### deps
+
+* update dependencies to latest ([0c45445](https://github.com/deopea-os/earth/commit/0c45445de5945e3e6a84ed62487d7a054701687e))
+
+
+### Features
+
+* **packages/semantic-release-config:** adds changelog title ([6188871](https://github.com/deopea-os/earth/commit/61888719acd3055cb409d17a30ca1db15ddaa519))
+* **packages/semantic-release-config:** adds github plugin ([fe3d5be](https://github.com/deopea-os/earth/commit/fe3d5be4eb65f23c398b5e2f5a740a1bb9392b6e))
+* **packages/semantic-release-config:** adds release rules ([f057257](https://github.com/deopea-os/earth/commit/f0572570852d55c7232694c89e186c87ddae2835))
+* **packages/semantic-release-config:** adds semantic-release config package ([c7ed45d](https://github.com/deopea-os/earth/commit/c7ed45da39972c91327c010b9b9c33121f59c825))
+* **semantic-release-config:** create custom workspaces release config ([b7fe6ed](https://github.com/deopea-os/earth/commit/b7fe6ed5c126f998d6a44a6c0a6debe6976b460f))
+
+
+### BREAKING CHANGES
+
+* updates certain min versions to new major versions
+
 # [1.0.0-alpha.2](https://github.com/deopea-os/earth/compare/@deopea.os/semantic-release-config-v1.0.0-alpha.1...@deopea.os/semantic-release-config-v1.0.0-alpha.2) (2023-10-18)
 
 
