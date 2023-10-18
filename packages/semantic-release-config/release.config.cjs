@@ -2,5 +2,6 @@
  * @type {import("semantic-release").Options}
  */
 module.exports = {
-  extends: "./index.js",
+  ...require("./lib/index.cjs"),
+  extends: "./lib/release-workspaces.cjs",
 };

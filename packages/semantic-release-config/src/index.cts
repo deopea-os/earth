@@ -1,7 +1,7 @@
 import type { Options } from "semantic-release";
 
 const config: Options = {
-  extends: "semantic-release-monorepo",
+  ...require("./release-workspaces.cjs"),
   plugins: [
     [
       "@semantic-release/commit-analyzer",

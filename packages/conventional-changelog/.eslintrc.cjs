@@ -5,6 +5,6 @@ module.exports = {
   extends: ["@deopea.os/eslint-config/node"],
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ["./tsconfig.json"],
+    project: ["./tsconfig.json", "./tsconfig.esm.json"],
   },
 };

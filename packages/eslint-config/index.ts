@@ -1,5 +1,5 @@
-import tsconfig from "@deopea.os/tsconfig";
-import type { TSESLint } from "@typescript-eslint/utils";
+import tsconfig = require("@deopea.os/tsconfig/base.json");
+import type { TSESLint } from "@typescript-eslint/utils/dist";
 
 const config: TSESLint.Linter.Config = {
   extends: [
@@ -9,7 +9,7 @@ const config: TSESLint.Linter.Config = {
     "prettier",
   ],
   env: {
-    [tsconfig.compilerOptions.module.toLowerCase()]: true,
+    [tsconfig.compilerOptions.target.toLowerCase()]: true,
     "shared-node-browser": true,
   },
   parser: "@typescript-eslint/parser",

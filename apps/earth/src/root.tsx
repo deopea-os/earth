@@ -4,7 +4,7 @@ import {
   RouterOutlet,
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
-import Head from "components/head/Head";
+import { Head } from "components/head";
 import globalStyles from "./global.css?inline";
 
 export default component$(() => {
@@ -12,7 +12,7 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <Head />
-      <body lang="en">
+      <body lang="en" class="selection:bg-secondary flex h-full flex-col">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

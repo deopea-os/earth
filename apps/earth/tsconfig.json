@@ -1,5 +1,5 @@
 {
-  "extends": "@deopea.os/tsconfig/browser",
+  "extends": "@deopea.os/tsconfig/qwik",
   "compilerOptions": {
     "baseUrl": "src",
     "outDir": "dist",
@@ -8,7 +8,8 @@
     "isolatedModules": true,
     "noEmit": true,
 
+    "types": ["node", "vite/client"],
     "typeRoots": ["typings"]
   },
-  "include": ["src", "typings"]
+  "include": ["src", "typings", "stack"]
 }

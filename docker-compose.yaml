@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  earth:
+    container_name: app
+    build:
+      context: .
+      dockerfile: apps/earth/Dockerfile
+      args:
+        NODE_ENV: $NODE_ENV
+        DOTENV_KEY: $DOTENV_KEY
+        PORT: 4040
+    ports:
+      - 4040:4040

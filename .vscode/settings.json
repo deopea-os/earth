@@ -1,5 +1,6 @@
 {
   "conventionalCommits.scopes": ["release"],
   "cSpell.words": ["deopea"],
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "dotenv.enableAutocloaking": true
 }

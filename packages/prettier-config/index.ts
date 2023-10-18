@@ -1,6 +1,7 @@
 import type { Options } from "prettier";
 
 const config: Options = {
+  plugins: ["tailwindcss"],
   endOfLine: "lf",
   quoteProps: "consistent",
   semi: true,
