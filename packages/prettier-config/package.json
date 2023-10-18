@@ -1,6 +1,6 @@
 {
   "name": "@deopea.os/prettier-config",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0",
   "private": false,
   "description": "prettier config used by the residents of deopea",
   "type": "commonjs",

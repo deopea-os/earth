@@ -1,5 +1,17 @@
 Changelog
 
+# [2.0.0](https://github.com/deopea-os/earth/compare/@deopea.os/prettier-config-v1.0.0...@deopea.os/prettier-config-v2.0.0) (2023-10-18)
+
+
+### deps
+
+* update dependencies to latest ([0c45445](https://github.com/deopea-os/earth/commit/0c45445de5945e3e6a84ed62487d7a054701687e))
+
+
+### BREAKING CHANGES
+
+* updates certain min versions to new major versions
+
 # [2.0.0-alpha.1](https://github.com/deopea-os/earth/compare/@deopea.os/prettier-config-v1.0.0...@deopea.os/prettier-config-v2.0.0-alpha.1) (2023-10-16)
 
 
