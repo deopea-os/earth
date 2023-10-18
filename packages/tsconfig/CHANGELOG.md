@@ -1,5 +1,23 @@
 Changelog
 
+# [2.0.0](https://github.com/deopea-os/earth/compare/@deopea.os/tsconfig-v1.0.1...@deopea.os/tsconfig-v2.0.0) (2023-10-18)
+
+
+### deps
+
+* update dependencies to latest ([0c45445](https://github.com/deopea-os/earth/commit/0c45445de5945e3e6a84ed62487d7a054701687e))
+
+
+### Features
+
+* **eslint-config,tsconfig:** update eslint and ts configs ([a48aa51](https://github.com/deopea-os/earth/commit/a48aa51c07deafd80248ce7f3e2ba76fdb68c953))
+* **packages/eslint-config,packages/tsconfig:** adds qwik configs ([ff69388](https://github.com/deopea-os/earth/commit/ff69388a2dcc6daf46c5229b51051b76628bddc7))
+
+
+### BREAKING CHANGES
+
+* updates certain min versions to new major versions
+
 # [2.0.0-alpha.1](https://github.com/deopea-os/earth/compare/@deopea.os/tsconfig-v1.0.1...@deopea.os/tsconfig-v2.0.0-alpha.1) (2023-10-16)
 
 
