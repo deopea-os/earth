@@ -1,6 +1,6 @@
 {
   "name": "@deopea.os/conventional-changelog",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0",
   "private": false,
   "description": "conventional-changelog preset used by residents of deopea",
   "type": "commonjs",
