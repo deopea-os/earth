@@ -1,5 +1,12 @@
 Changelog
 
+# [2.0.0-alpha.2](https://github.com/deopea-os/earth/compare/@deopea.os/conventional-changelog-v2.0.0-alpha.1...@deopea.os/conventional-changelog-v2.0.0-alpha.2) (2023-10-18)
+
+
+### Bug Fixes
+
+* **semantic-release-config:** fix commits in package changelogs ([6a17d6d](https://github.com/deopea-os/earth/commit/6a17d6d80abbed5eb84956182011579264f4df4b))
+
 # [2.0.0-alpha.1](https://github.com/deopea-os/earth/compare/@deopea.os/conventional-changelog-v1.0.0...@deopea.os/conventional-changelog-v2.0.0-alpha.1) (2023-10-16)
 
 
