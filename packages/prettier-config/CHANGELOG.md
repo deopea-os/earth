@@ -1,5 +1,12 @@
 Changelog
 
+## [2.0.1](https://github.com/deopea-os/earth/compare/@deopea.os/prettier-config-v2.0.0...@deopea.os/prettier-config-v2.0.1) (2023-10-19)
+
+
+### Bug Fixes
+
+* **prettier-config:** remove tailwind plugin ([7ebfd7d](https://github.com/deopea-os/earth/commit/7ebfd7d67398698e09c2ff548ca56a5d26eed6b7))
+
 # [2.0.0](https://github.com/deopea-os/earth/compare/@deopea.os/prettier-config-v1.0.0...@deopea.os/prettier-config-v2.0.0) (2023-10-18)
 
 
