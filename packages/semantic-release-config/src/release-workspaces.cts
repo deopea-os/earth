@@ -1,4 +1,3 @@
-import type { NormalizedReadResult } from "read-pkg-up";
 import type {
   AnalyzeCommitsContext,
   Commit,
@@ -6,13 +5,12 @@ import type {
   GlobalConfig,
   Options,
 } from "semantic-release";
-
+import pkgUp = require("read-package-up");
 import path = require("path");
-import pkgUp = require("read-pkg-up");
 import simpleGit = require("simple-git");
 import utils = require("./utils.cjs");
 
-const pkg: NormalizedReadResult | undefined = pkgUp.sync();
+const pkg = pkgUp.readPackageUpSync();
 const pkgDir = pkg && path.dirname(pkg.path);
 const git = simpleGit.simpleGit();
 

@@ -15,19 +15,19 @@
   },
   "peerDependencies": {
     "@deopea.os/conventional-changelog": "*",
-    "semantic-release": "^22.0.0",
+    "semantic-release": "^23.0.2",
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/error": "^3.0.0",
+    "@semantic-release/error": "^4.0.0",
     "@semantic-release/git": "^10.0.1",
-    "read-pkg-up": "^7.0.1",
-    "simple-git": "^3.20.0"
+    "read-package-up": "^11.0.0",
+    "simple-git": "^3.22.0"
   },
   "devDependencies": {
-    "@types/semantic-release__error": "^3.0.1",
-    "@types/signale": "^1.4.5",
+    "@types/semantic-release__error": "^3.0.3",
+    "@types/signale": "^1.4.7",
     "typescript": "*"
   },
   "repository": {
