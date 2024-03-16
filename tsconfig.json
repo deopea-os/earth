@@ -1,8 +1,7 @@
 {
-  "extends": "@deopea.os/tsconfig/cjs.json",
+  "extends": "@deopea.os/tsconfig/node",
   "compilerOptions": {
     "outDir": "dist"
   },
-  "files": [".eslintrc.cjs", ".prettierrc.cjs", "commitlint.config.cjs"],
-  "include": ["**/*.cjs"]
+  "include": ["./*"]
 }

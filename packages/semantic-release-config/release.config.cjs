@@ -1,7 +1,6 @@
 /**
- * @type {import("semantic-release").Options}
+ * @type {import('semantic-release').GlobalConfig}
  */
 module.exports = {
-  ...require("./lib/index.cjs"),
-  extends: "./lib/release-workspaces.cjs",
+  extends: ["./lib/index.cjs", "./lib/release-workspaces.cjs"],
 };

@@ -11,6 +11,8 @@
   ],
   "scripts": {
     "build": "tsc",
+    "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" .",
+    "lint": "TIMING=1 eslint --cache --cache-location \".turbo/.eslintcache\"",
     "release": "semantic-release"
   },
   "peerDependencies": {
@@ -26,6 +28,7 @@
     "simple-git": "^3.22.0"
   },
   "devDependencies": {
+    "@deopea.os/eslint-config": "^2.0.0",
     "@types/semantic-release__error": "^3.0.3",
     "@types/signale": "^1.4.7",
     "typescript": "*"
