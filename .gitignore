@@ -43,3 +43,6 @@ out
 
 # deploy
 cdk.out
+
+
+.nx/cache

@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals",
+      "!{projectRoot}/**/*.test.*"
+    ],
+    "all": ["default", "{projectRoot}/**/*.test.*"],
+    "sharedGlobals": []
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/lib"],
+      "cache": true
+    },
+    "fmt": {
+      "inputs": ["all", "{workspaceRoot}/prettier.config.js"],
+      "outputs": ["{projectRoot}/.cache/prettier/.prettier-cache"],
+      "cache": true
+    },
+    "lint": {
+      "inputs": ["all", "{projectRoot}/eslint.config.js"],
+      "outputs": ["{projectRoot}/.cache/eslint/.eslintcache"],
+      "cache": true
+    },
+    "release": {
+      "inputs": ["default", { "env": "GITHUB_TOKEN" }, { "env": "NPM_TOKEN" }],
+      "outputs": ["{projectRoot}/package*.json", "{projectRoot}/CHANGELOG.md"],
+      "cache": false
+    },
+    "test": {
+      "inputs": ["all"],
+      "outputs": ["{projectRoot}/coverage"],
+      "cache": true
+    }
+  },
+  "defaultBase": "main",
+  "nxCloudAccessToken": "ZmYxYTQ0M2ItY2Q3ZS00YTYxLWFkMjUtNTYyY2RkNTRhZDk0fHJlYWQtd3JpdGU="
+}

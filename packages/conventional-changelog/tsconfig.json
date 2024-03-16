@@ -5,5 +5,5 @@
   },
   "files": ["release.config.cjs"],
   "include": ["src", "typings"],
-  "exclude": ["src/*.test.*"],
+  "exclude": ["src/*.test.*"]
 }
