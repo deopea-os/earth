@@ -1,8 +1,0 @@
-{
-  "extends": "@deopea.os/tsconfig/node",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "@builder.io/qwik"
-  },
-  "include": ["../../typings", "**/*"]
-}

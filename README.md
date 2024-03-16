@@ -8,8 +8,6 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
-- `docs`: a [qwik](https://qwik.builder.io/) app for [@deopea](https://github.com/deopea) packages documentation
-- `earth`: a [qwik](https://qwik.builder.io/) app for the [@deopea](https://github.com/deopea) home
 - `eslint-config`: `eslint` configurations for [@deopea](https://github.com/deopea)
 - `prettier-config`: `prettier` configuration for [@deopea](https://github.com/deopea)
 - `tsconfig`: `typescript` configurations for [@deopea](https://github.com/deopea)
@@ -34,19 +32,19 @@ This repo follows the [Conventional Commits](https://www.conventionalcommits.org
 The commit types are based on [Conventional Changelog Metahub](https://github.com/pvdlg/conventional-changelog-metahub).
 
 | Commit Type | Title                    | Description                                                                                                 | Emoji | Release                  | Include in changelog |
-|-------------|--------------------------|-------------------------------------------------------------------------------------------------------------|-------|--------------------------|----------------------|
-| feat        | Features                 | A new feature                                                                                               | ✨     | minor                    | true                 |
-| fix         | Bug Fixes                | A bug Fix                                                                                                   | 🐛     | patch                    | true                 |
-| docs        | Documentation            | Documentation only changes                                                                                  | 📚     | patch if scope is readme | true                 |
-| style       | Styles                   | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      | 💎     | -                        | true                 |
-| refactor    | Code Refactoring         | A code change that neither fixes a bug nor adds a feature                                                   | 📦     | -                        | true                 |
-| perf        | Performance Improvements | A code change that improves performance                                                                     | 🚀     | patch                    | true                 |
-| test        | Tests                    | Adding missing tests or correcting existing tests                                                           | 🚨     | -                        | true                 |
-| build       | Builds                   | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         | 🛠     | patch                    | true                 |
-| ci          | Continuous Integrations  | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) | ⚙️     | -                        | true                 |
-| config      | Config Changes           | Changes to config files with a scope of the tool the config relates to (e.g. `config(eslint): ....`)        | ⚙️     | -                        | true                 |
-| chore       | Chores                   | Other changes that don't modify src or test files                                                           | ♻️     | -                        | true                 |
-| revert      | Reverts                  | Reverts a previous commit                                                                                   | 🗑     | -                        | true                 |
+| ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------- | ----- | ------------------------ | -------------------- |
+| feat        | Features                 | A new feature                                                                                               | ✨    | minor                    | true                 |
+| fix         | Bug Fixes                | A bug Fix                                                                                                   | 🐛    | patch                    | true                 |
+| docs        | Documentation            | Documentation only changes                                                                                  | 📚    | patch if scope is readme | true                 |
+| style       | Styles                   | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      | 💎    | -                        | true                 |
+| refactor    | Code Refactoring         | A code change that neither fixes a bug nor adds a feature                                                   | 📦    | -                        | true                 |
+| perf        | Performance Improvements | A code change that improves performance                                                                     | 🚀    | patch                    | true                 |
+| test        | Tests                    | Adding missing tests or correcting existing tests                                                           | 🚨    | -                        | true                 |
+| build       | Builds                   | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         | 🛠    | patch                    | true                 |
+| ci          | Continuous Integrations  | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) | ⚙️    | -                        | true                 |
+| config      | Config Changes           | Changes to config files with a scope of the tool the config relates to (e.g. `config(eslint): ....`)        | ⚙️    | -                        | true                 |
+| chore       | Chores                   | Other changes that don't modify src or test files                                                           | ♻️    | -                        | true                 |
+| revert      | Reverts                  | Reverts a previous commit                                                                                   | 🗑    | -                        | true                 |
 
 ### Commit Scopes
 
