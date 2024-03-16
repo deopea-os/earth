@@ -26,6 +26,7 @@
       "cache": true
     },
     "release": {
+      "dependsOn": ["lint", "test", "build"],
       "inputs": ["default", { "env": "GITHUB_TOKEN" }, { "env": "NPM_TOKEN" }],
       "outputs": ["{projectRoot}/package*.json", "{projectRoot}/CHANGELOG.md"],
       "cache": false

@@ -20,7 +20,6 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@deopea.os/eslint-config": "^2.0.0",
     "typescript": "*"
   },
   "repository": {

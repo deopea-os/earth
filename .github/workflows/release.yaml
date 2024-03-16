@@ -6,41 +6,48 @@ on:
       - next
       - next-major
       - beta
+      - "beta/**"
       - alpha
+      - "alpha/**"
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    env:
-      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-      TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
 
-      - name: Setup Node
+      - name: setup node
         uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: npm
+          cache: "npm"
 
-      - name: Install Dependencies
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # This line enables distribution
+      # The "--stop-agents-after" is optional, but allows idle agents to shut down once the "e2e-ci" targets have been requested
+      # - run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
+
+      - name: install
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - uses: nrwl/nx-set-shas@v3
 
-      - name: Test
-        run: npm run test
+      # This line is needed for nx affected to work when CI is running on a PR
+      - run: git branch --track main origin/main
 
-      - name: Release
+      # - run: npx nx-cloud record -- nx format:check
+
+      - name: build
+        run: npm run affected -- -t build
+
+      - name: test
+        run: npm run affected -- -t lint test
+
+      - name: release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run release -- --concurrency=1
+        run: npm run affected --parallel 1 -t release

@@ -16,7 +16,7 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "@deopea.os/conventional-changelog": "*",
+    "@deopea.os/conventional-changelog": "^2.0.0",
     "semantic-release": "^23.0.2",
     "typescript": "^5.0.0"
   },
@@ -28,7 +28,6 @@
     "simple-git": "^3.22.0"
   },
   "devDependencies": {
-    "@deopea.os/eslint-config": "^2.0.0",
     "@types/semantic-release__error": "^3.0.3",
     "@types/signale": "^1.4.7",
     "typescript": "*"

@@ -23,7 +23,6 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@deopea.os/eslint-config": "^2.0.0",
     "@types/conventional-changelog": "^3.1.5",
     "@types/conventional-changelog-config-spec": "^2.1.5",
     "@types/node": "^20.11.25",
