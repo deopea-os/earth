@@ -1,5 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Browser",
-  "extends": ["./base.json", "@tsconfig/create-react-app/tsconfig.json"],
+  "extends": ["./base.json", "@tsconfig/create-react-app/tsconfig.json"]
 }
