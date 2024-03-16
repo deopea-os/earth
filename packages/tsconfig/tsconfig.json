@@ -1,7 +1,9 @@
 {
-  "extends": "./cjs.json",
+  "extends": "./lib/node.json",
   "compilerOptions": {
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "noEmit": true
   },
-  "files": ["index.d.ts"]
+  "files": ["release.config.cjs"],
+  "include": ["lib"]
 }

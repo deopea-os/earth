@@ -3,14 +3,22 @@
   "version": "2.0.0",
   "private": false,
   "description": "tsconfigs used by residents of deopea",
-  "main": "base.json",
-  "types": "index.d.ts",
+  "type": "module",
+  "main": "lib/base.json",
+  "types": "lib/index.d.ts",
   "files": [
-    "*.json",
-    "!tsconfig.json"
+    "lib"
   ],
+  "exports": {
+    ".": "./lib/base.json",
+    "./browser": "./lib/browser.json",
+    "./cjs": "./lib/cjs.json",
+    "./node": "./lib/node.json",
+    "./qwik": "./lib/qwik.json"
+  },
   "scripts": {
     "fmt": "prettier --write --cache --cache-location \".turbo/.prettier-cache\" .",
+    "lint": "TIMING=1 eslint --cache --cache-location \".turbo/.eslintcache\"",
     "release": "semantic-release"
   },
   "repository": {
@@ -32,5 +40,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@tsconfig/create-react-app": "^2.0.2",
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/recommended": "^1.0.3",
+    "@tsconfig/strictest": "^2.0.3",
+    "@tsconfig/vite-react": "^3.0.1"
   }
 }
