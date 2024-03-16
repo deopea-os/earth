@@ -1,12 +1,13 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
-import commitlintConfig from "../commitlint-config/index.js";
+import commitlintConfig from "../../commitlint-config/src/index.js";
 import changelogOptions from "./index.js";
 
 describe("conventional-changelog config", () => {
   const changelogTypes = changelogOptions()
     .config.types?.map(({ type }) => type)
     .sort();
+
   const commitlintTypeEnumRule = commitlintConfig.rules?.["type-enum"];
   const commitlintTypes =
     Array.isArray(commitlintTypeEnumRule) &&

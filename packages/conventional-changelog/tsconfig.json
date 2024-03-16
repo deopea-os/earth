@@ -1,12 +1,9 @@
 {
-  "extends": "@deopea.os/tsconfig/cjs.json",
+  "extends": "@deopea.os/tsconfig/node",
   "compilerOptions": {
-    "outDir": "./"
+    "outDir": "./lib"
   },
-  "include": ["*.ts", "typings"],
-  "exclude": ["*.test.*"],
-
-  "ts-node": {
-    "transpileOnly": true
-  }
+  "files": ["release.config.cjs"],
+  "include": ["src", "typings"],
+  "exclude": ["src/*.test.*"],
 }

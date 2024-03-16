@@ -1,5 +1,5 @@
 import type { Config } from "conventional-changelog-config-spec";
-import conventionalConfig = require("conventional-changelog-conventionalcommits");
+import conventionalConfig from "conventional-changelog-conventionalcommits";
 
 const config: Config = {
   types: [
@@ -26,4 +26,4 @@ const options = (): conventionalConfig.ResolvedConfig & {
   config,
 });
 
-export = options;
+export default options;
