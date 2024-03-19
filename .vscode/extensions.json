@@ -1,8 +1,0 @@
-{
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "unifiedjs.vscode-mdx",
-    "vivaxy.vscode-conventional-commits"
-  ],
-  "unwantedRecommendations": []
-}

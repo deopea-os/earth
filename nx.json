@@ -1,5 +1,15 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
+  "nxCloudAccessToken": "ZmYxYTQ0M2ItY2Q3ZS00YTYxLWFkMjUtNTYyY2RkNTRhZDk0fHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
   "namedInputs": {
     "default": [
       "{projectRoot}/**/*",
@@ -27,7 +37,15 @@
     },
     "release": {
       "dependsOn": ["lint", "test", "build"],
-      "inputs": ["default", { "env": "GITHUB_TOKEN" }, { "env": "NPM_TOKEN" }],
+      "inputs": [
+        "default",
+        {
+          "env": "GITHUB_TOKEN"
+        },
+        {
+          "env": "NPM_TOKEN"
+        }
+      ],
       "outputs": ["{projectRoot}/package*.json", "{projectRoot}/CHANGELOG.md"],
       "cache": false
     },
@@ -37,6 +55,66 @@
       "cache": true
     }
   },
-  "defaultBase": "main",
-  "nxCloudAccessToken": "ZmYxYTQ0M2ItY2Q3ZS00YTYxLWFkMjUtNTYyY2RkNTRhZDk0fHJlYWQtd3JpdGU="
+  "release": {
+    "projectsRelationship": "independent",
+    "releaseTagPattern": "{projectName}-v{version}",
+    "changelog": {
+      "projectChangelogs": {
+        "createRelease": "github"
+      }
+    },
+    "version": {
+      "conventionalCommits": true
+    },
+    "conventionalCommits": {
+      "types": {
+        "build": {
+          "semverBump": "patch",
+          "changelog": { "title": "Build System" }
+        },
+        "chore": {
+          "semverBump": "none",
+          "changelog": { "title": "Miscellaneous Chores", "hidden": true }
+        },
+        "ci": {
+          "semverBump": "none",
+          "changelog": { "title": "Continuous Integration", "hidden": true }
+        },
+        "config": {
+          "semverBump": "none",
+          "changelog": { "title": "Configurations", "hidden": true }
+        },
+        "deps": {
+          "semverBump": "patch",
+          "changelog": { "title": "Dependencies" }
+        },
+        "docs": {
+          "semverBump": "patch",
+          "changelog": { "title": "Documentation", "hidden": true }
+        },
+        "feat": { "semverBump": "minor", "changelog": { "title": "Features" } },
+        "fix": { "semverBump": "patch", "changelog": { "title": "Bug Fixes" } },
+        "perf": {
+          "semverBump": "patch",
+          "changelog": { "title": "Performance Improvements" }
+        },
+        "refactor": {
+          "semverBump": "patch",
+          "changelog": { "title": "Code Refactoring" }
+        },
+        "revert": {
+          "semverBump": "minor",
+          "changelog": { "title": "Reverts" }
+        },
+        "style": {
+          "semverBump": "minor",
+          "changelog": { "title": "Styles" }
+        },
+        "test": {
+          "semverBump": "none",
+          "changelog": { "title": "Tests", "hidden": true }
+        }
+      }
+    }
+  }
 }

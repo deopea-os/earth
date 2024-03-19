@@ -1,0 +1,9 @@
+name: Nx
+description: Setup Nx caching
+
+runs:
+  using: composite
+  steps:
+    - uses: nrwl/nx-set-shas@v3
+    - run: git branch --track main origin/main
+      shell: bash
